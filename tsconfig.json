@@ -3,7 +3,7 @@
         "target": "ESNext",
         "module": "commonjs",
         "rootDir": "./src/",
-        "outDir": "./dist/",
+        "outDir": "./build/",
         "moduleResolution": "node",
         "importHelpers": true,
         "experimentalDecorators": true,
