@@ -25,10 +25,11 @@ client.on("ready", () => {
   console.log(`${client.user.tag} is online`);
 });
 
+// check if automod action is executed
 client.on(
   "autoModerationActionExecution",
   (action: AutoModerationActionExecution) => {
-    if (action.action.type !== AutoModerationActionType.BlockMessage) {
+    if (action.action.type !== AutoModerationActionType.SendAlertMessage) {
       return;
     }
 
